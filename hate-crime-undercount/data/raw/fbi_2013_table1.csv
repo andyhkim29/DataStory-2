@@ -1,0 +1,12 @@
+bias_category,incidents,offenses,victims,known_offenders,source_table,source_url,source_note
+Total,5928,6933,7242,5814,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Single-Bias Incidents,5922,6921,7230,5808,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Race,2871,3407,3563,2733,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Religion,1031,1163,1223,682,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Sexual Orientation,1233,1402,1461,1514,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Ethnicity,655,794,821,743,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Disability,83,92,99,77,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Gender,18,30,30,20,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Gender Identity,31,33,33,39,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+Multiple-Bias Incidents,6,12,12,6,FBI Table 1,https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf,"Incidents, Offenses, Victims, and Known Offenders by Bias Motivation, 2013"
+

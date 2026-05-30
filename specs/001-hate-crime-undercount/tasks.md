@@ -17,10 +17,10 @@
 
 **Purpose**: Create the requested project skeleton and dependency manifest.
 
-- [ ] T001 Create `hate-crime-undercount/` project directory structure with `data/raw/`, `data/processed/`, `figures/`, and `tests/`
-- [ ] T002 Create `hate-crime-undercount/requirements.txt` with pinned package versions for pandas, matplotlib, requests, jupyter, nbconvert, nbclient, ipykernel, and pytest
-- [ ] T003 Create placeholder `hate-crime-undercount/notebook.ipynb` with top package-version comment block and the required narrative section headings
-- [ ] T004 Create initial `hate-crime-undercount/README.md` with one-paragraph project description and quickstart run commands
+- [x] T001 Create `hate-crime-undercount/` project directory structure with `data/raw/`, `data/processed/`, `figures/`, and `tests/`
+- [x] T002 Create `hate-crime-undercount/requirements.txt` with pinned package versions for pandas, matplotlib, requests, jupyter, nbconvert, nbclient, ipykernel, and pytest
+- [x] T003 Create placeholder `hate-crime-undercount/notebook.ipynb` with top package-version comment block and the required narrative section headings
+- [x] T004 Create initial `hate-crime-undercount/README.md` with one-paragraph project description and quickstart run commands
 
 ---
 
@@ -30,11 +30,11 @@
 
 **CRITICAL**: No user story work can begin until this phase is complete.
 
-- [ ] T005 Add FBI source metadata and download URLs for Table 1 and Table 4 in `hate-crime-undercount/notebook.ipynb`
-- [ ] T006 Add BJS source metadata, supplied 2013 values, 2013-2017 funnel values, and bias percentages in `hate-crime-undercount/data/raw/bjs_published_values.csv`
-- [ ] T007 Add reusable notebook helper cells for creating directories, fetching missing FBI raw CSVs, and saving outputs in `hate-crime-undercount/notebook.ipynb`
-- [ ] T008 Add shared validation helpers for required columns, non-negative numeric values, expected categories, and anchor values in `hate-crime-undercount/notebook.ipynb`
-- [ ] T009 Create pytest fixture utilities for locating project artifacts in `hate-crime-undercount/tests/conftest.py`
+- [x] T005 Add FBI source metadata and download URLs for Table 1 and Table 4 in `hate-crime-undercount/notebook.ipynb`
+- [x] T006 Add BJS source metadata, supplied 2013 values, 2013-2017 funnel values, and bias percentages in `hate-crime-undercount/data/raw/bjs_published_values.csv`
+- [x] T007 Add reusable notebook helper cells for creating directories, fetching missing FBI raw CSVs, and saving outputs in `hate-crime-undercount/notebook.ipynb`
+- [x] T008 Add shared validation helpers for required columns, non-negative numeric values, expected categories, and anchor values in `hate-crime-undercount/notebook.ipynb`
+- [x] T009 Create pytest fixture utilities for locating project artifacts in `hate-crime-undercount/tests/conftest.py`
 
 **Checkpoint**: Foundation ready; each user-story phase can use the same source metadata, raw value file, and validation helpers.
 
@@ -48,17 +48,17 @@
 
 ### Tests for User Story 1
 
-- [ ] T010 [P] [US1] Add processed funnel schema and anchor-value tests in `hate-crime-undercount/tests/test_processed_outputs.py`
-- [ ] T011 [P] [US1] Add figure existence test for `figures/funnel.png` in `hate-crime-undercount/tests/test_processed_outputs.py`
+- [x] T010 [P] [US1] Add processed funnel schema and anchor-value tests in `hate-crime-undercount/tests/test_processed_outputs.py`
+- [x] T011 [P] [US1] Add figure existence test for `figures/funnel.png` in `hate-crime-undercount/tests/test_processed_outputs.py`
 
 ### Implementation for User Story 1
 
-- [ ] T012 [US1] Implement BJS funnel DataFrame construction from `data/raw/bjs_published_values.csv` in `hate-crime-undercount/notebook.ipynb`
-- [ ] T013 [US1] Calculate `loss_from_previous` and `loss_percent_from_previous` for all funnel transitions in `hate-crime-undercount/notebook.ipynb`
-- [ ] T014 [US1] Validate five-step descending order and required values `204600`, `101900`, `45600`, `15200`, and `7500` in `hate-crime-undercount/notebook.ipynb`
-- [ ] T015 [US1] Write `hate-crime-undercount/data/processed/bjs_funnel.csv` from the notebook
-- [ ] T016 [US1] Generate `hate-crime-undercount/figures/funnel.png` with five descending bars, stage labels, loss labels, and verified CI bounds where available
-- [ ] T017 [US1] Add funnel narrative markdown explaining source units, reporting-pipeline loss, CI handling, and missing-bound notes in `hate-crime-undercount/notebook.ipynb`
+- [x] T012 [US1] Implement BJS funnel DataFrame construction from `data/raw/bjs_published_values.csv` in `hate-crime-undercount/notebook.ipynb`
+- [x] T013 [US1] Calculate `loss_from_previous` and `loss_percent_from_previous` for all funnel transitions in `hate-crime-undercount/notebook.ipynb`
+- [x] T014 [US1] Validate five-step descending order and required values `204600`, `101900`, `45600`, `15200`, and `7500` in `hate-crime-undercount/notebook.ipynb`
+- [x] T015 [US1] Write `hate-crime-undercount/data/processed/bjs_funnel.csv` from the notebook
+- [x] T016 [US1] Generate `hate-crime-undercount/figures/funnel.png` with five descending bars, stage labels, loss labels, and verified CI bounds where available
+- [x] T017 [US1] Add funnel narrative markdown explaining source units, reporting-pipeline loss, CI handling, and missing-bound notes in `hate-crime-undercount/notebook.ipynb`
 
 **Checkpoint**: User Story 1 is complete when the funnel CSV, funnel chart, and US1 tests pass independently.
 
@@ -72,17 +72,17 @@
 
 ### Tests for User Story 2
 
-- [ ] T018 [P] [US2] Add bias breakdown schema, category, and required percentage tests in `hate-crime-undercount/tests/test_processed_outputs.py`
-- [ ] T019 [P] [US2] Add figure existence test for `figures/bias_breakdown.png` in `hate-crime-undercount/tests/test_processed_outputs.py`
+- [x] T018 [P] [US2] Add bias breakdown schema, category, and required percentage tests in `hate-crime-undercount/tests/test_processed_outputs.py`
+- [x] T019 [P] [US2] Add figure existence test for `figures/bias_breakdown.png` in `hate-crime-undercount/tests/test_processed_outputs.py`
 
 ### Implementation for User Story 2
 
-- [ ] T020 [US2] Implement bias breakdown DataFrame construction from `data/raw/bjs_published_values.csv` in `hate-crime-undercount/notebook.ipynb`
-- [ ] T021 [US2] Calculate `gap_percentage_points` for each bias category in `hate-crime-undercount/notebook.ipynb`
-- [ ] T022 [US2] Validate required NCVS/UCR pairs `57/60`, `8/19`, `27/2`, `26/18`, and `16/1` in `hate-crime-undercount/notebook.ipynb`
-- [ ] T023 [US2] Write `hate-crime-undercount/data/processed/bias_breakdown.csv` from the notebook
-- [ ] T024 [US2] Generate `hate-crime-undercount/figures/bias_breakdown.png` with paired NCVS/UCR bars for all five categories
-- [ ] T025 [US2] Add bias breakdown narrative markdown emphasizing gender and disability disparities without forcing percentages to sum to 100 in `hate-crime-undercount/notebook.ipynb`
+- [x] T020 [US2] Implement bias breakdown DataFrame construction from `data/raw/bjs_published_values.csv` in `hate-crime-undercount/notebook.ipynb`
+- [x] T021 [US2] Calculate `gap_percentage_points` for each bias category in `hate-crime-undercount/notebook.ipynb`
+- [x] T022 [US2] Validate required NCVS/UCR pairs `57/60`, `8/19`, `27/2`, `26/18`, and `16/1` in `hate-crime-undercount/notebook.ipynb`
+- [x] T023 [US2] Write `hate-crime-undercount/data/processed/bias_breakdown.csv` from the notebook
+- [x] T024 [US2] Generate `hate-crime-undercount/figures/bias_breakdown.png` with paired NCVS/UCR bars for all five categories
+- [x] T025 [US2] Add bias breakdown narrative markdown emphasizing gender and disability disparities without forcing percentages to sum to 100 in `hate-crime-undercount/notebook.ipynb`
 
 **Checkpoint**: User Story 2 is complete when the bias CSV, bias chart, and US2 tests pass independently.
 
@@ -96,17 +96,17 @@
 
 ### Tests for User Story 3
 
-- [ ] T026 [P] [US3] Add FBI summary schema and non-negative count tests in `hate-crime-undercount/tests/test_processed_outputs.py`
-- [ ] T027 [P] [US3] Add source citation non-empty tests for all processed CSVs in `hate-crime-undercount/tests/test_processed_outputs.py`
+- [x] T026 [P] [US3] Add FBI summary schema and non-negative count tests in `hate-crime-undercount/tests/test_processed_outputs.py`
+- [x] T027 [P] [US3] Add source citation non-empty tests for all processed CSVs in `hate-crime-undercount/tests/test_processed_outputs.py`
 
 ### Implementation for User Story 3
 
-- [ ] T028 [US3] Fetch or load FBI Table 1 and Table 4 raw CSVs into `hate-crime-undercount/data/raw/` from `hate-crime-undercount/notebook.ipynb`
-- [ ] T029 [US3] Transform FBI Table 1 into canonical 2013 bias summary rows in `hate-crime-undercount/notebook.ipynb`
-- [ ] T030 [US3] Validate FBI summary categories, numeric count fields, and source table references in `hate-crime-undercount/notebook.ipynb`
-- [ ] T031 [US3] Write `hate-crime-undercount/data/processed/fbi_2013_summary.csv` from the notebook
-- [ ] T032 [US3] Render a notebook summary table with FBI 2013 values, NCVS 2013 estimate `254900`, police-reported `88400`, not-reported `154300`, and 2013-2017 funnel values in `hate-crime-undercount/notebook.ipynb`
-- [ ] T033 [US3] Add final under-500-word findings and caveats writeup with unit-comparison, NCVS coverage, FBI voluntary-reporting, missing-jurisdiction, and CI caveats in `hate-crime-undercount/notebook.ipynb`
+- [x] T028 [US3] Fetch or load FBI Table 1 and Table 4 raw CSVs into `hate-crime-undercount/data/raw/` from `hate-crime-undercount/notebook.ipynb`
+- [x] T029 [US3] Transform FBI Table 1 into canonical 2013 bias summary rows in `hate-crime-undercount/notebook.ipynb`
+- [x] T030 [US3] Validate FBI summary categories, numeric count fields, and source table references in `hate-crime-undercount/notebook.ipynb`
+- [x] T031 [US3] Write `hate-crime-undercount/data/processed/fbi_2013_summary.csv` from the notebook
+- [x] T032 [US3] Render a notebook summary table with FBI 2013 values, NCVS 2013 estimate `254900`, police-reported `88400`, not-reported `154300`, and 2013-2017 funnel values in `hate-crime-undercount/notebook.ipynb`
+- [x] T033 [US3] Add final under-500-word findings and caveats writeup with unit-comparison, NCVS coverage, FBI voluntary-reporting, missing-jurisdiction, and CI caveats in `hate-crime-undercount/notebook.ipynb`
 
 **Checkpoint**: User Story 3 is complete when the FBI summary CSV, summary table, traceability checks, and final writeup are present.
 
@@ -120,15 +120,15 @@
 
 ### Tests for User Story 4
 
-- [ ] T034 [P] [US4] Add notebook execution test using nbconvert or nbclient in `hate-crime-undercount/tests/test_notebook_execution.py`
-- [ ] T035 [P] [US4] Add README command smoke-check expectations in `hate-crime-undercount/tests/test_processed_outputs.py`
+- [x] T034 [P] [US4] Add notebook execution test using nbconvert or nbclient in `hate-crime-undercount/tests/test_notebook_execution.py`
+- [x] T035 [P] [US4] Add README command smoke-check expectations in `hate-crime-undercount/tests/test_processed_outputs.py`
 
 ### Implementation for User Story 4
 
-- [ ] T036 [US4] Finalize notebook section order as the two sources, loading and validation, the funnel, the bias breakdown, findings and caveats in `hate-crime-undercount/notebook.ipynb`
-- [ ] T037 [US4] Ensure figure sizing, labels, and exported PNG readability are suitable for notebook display and video editing in `hate-crime-undercount/notebook.ipynb`
-- [ ] T038 [US4] Update `hate-crime-undercount/README.md` with complete fresh-clone setup, execution, testing, and output-location instructions
-- [ ] T039 [US4] Run the notebook end-to-end and save final generated outputs in `hate-crime-undercount/data/processed/` and `hate-crime-undercount/figures/`
+- [x] T036 [US4] Finalize notebook section order as the two sources, loading and validation, the funnel, the bias breakdown, findings and caveats in `hate-crime-undercount/notebook.ipynb`
+- [x] T037 [US4] Ensure figure sizing, labels, and exported PNG readability are suitable for notebook display and video editing in `hate-crime-undercount/notebook.ipynb`
+- [x] T038 [US4] Update `hate-crime-undercount/README.md` with complete fresh-clone setup, execution, testing, and output-location instructions
+- [x] T039 [US4] Run the notebook end-to-end and save final generated outputs in `hate-crime-undercount/data/processed/` and `hate-crime-undercount/figures/`
 
 **Checkpoint**: User Story 4 is complete when the documented workflow produces the full package from a fresh clone.
 
@@ -138,13 +138,13 @@
 
 **Purpose**: Final verification across all user stories and constitution gates.
 
-- [ ] T040 Run `pytest` from `hate-crime-undercount/` and fix any failures in `hate-crime-undercount/tests/`
-- [ ] T041 Run `jupyter nbconvert --to notebook --execute notebook.ipynb --output notebook.executed.ipynb` from `hate-crime-undercount/`
-- [ ] T042 Verify every final numeric claim in `hate-crime-undercount/notebook.ipynb` traces to a processed CSV row and cited source
-- [ ] T043 Verify required caveats appear near results and in the final findings section of `hate-crime-undercount/notebook.ipynb`
-- [ ] T044 Confirm generated raw data size is under 10 MB or document first-run fetch behavior in `hate-crime-undercount/README.md`
-- [ ] T045 Review `hate-crime-undercount/figures/funnel.png` and `hate-crime-undercount/figures/bias_breakdown.png` for readable labels and no visual overlap
-- [ ] T046 Remove or ignore transient execution artifacts such as `hate-crime-undercount/notebook.executed.ipynb` if they are not part of the committed deliverable
+- [x] T040 Run `pytest` from `hate-crime-undercount/` and fix any failures in `hate-crime-undercount/tests/`
+- [x] T041 Run `jupyter nbconvert --to notebook --execute notebook.ipynb --output notebook.executed.ipynb` from `hate-crime-undercount/`
+- [x] T042 Verify every final numeric claim in `hate-crime-undercount/notebook.ipynb` traces to a processed CSV row and cited source
+- [x] T043 Verify required caveats appear near results and in the final findings section of `hate-crime-undercount/notebook.ipynb`
+- [x] T044 Confirm generated raw data size is under 10 MB or document first-run fetch behavior in `hate-crime-undercount/README.md`
+- [x] T045 Review `hate-crime-undercount/figures/funnel.png` and `hate-crime-undercount/figures/bias_breakdown.png` for readable labels and no visual overlap
+- [x] T046 Remove or ignore transient execution artifacts such as `hate-crime-undercount/notebook.executed.ipynb` if they are not part of the committed deliverable
 
 ---
 
